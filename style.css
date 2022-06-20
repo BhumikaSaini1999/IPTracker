@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fea47f;
+  font-family: "New Tegomin", serif;
+}
+
+h1 {
+  text-align: center;
+  margin: 3px;
+  font-family: "New Tegomin", serif;
+  font-size: 50px;
+  font-weight: 99px;
+}
+.main-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ip-display,
+.location-display,
+.geo-display,
+.timezone {
+  font-size: 40px;
+  margin: 3px;
+}
+
+.lookup-btn {
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: large;
+  font-weight: 700;
+  padding: 8px 8px 8px 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: opacity 250ms linear;
+  font-family: "New Tegomin", serif;
+}
+
+.lookup-btn:hover {
+  opacity: 0.6;
+}
+
+.loader-container {
+  display: none;
+}
+.loader {
+  width: 8px;
+  height: 35px;
+  background: black;
+  margin: 4px;
+  animation: loading 1s ease-in-out infinite alternate;
+}
+.loader1 {
+  animation: loading 1s ease-in-out infinite alternate;
+}
+
+.loader2 {
+  animation: loading 1s ease-in-out infinite alternate 0.5s;
+}
+.loader3 {
+  animation: loading 1s ease-in-out infinite alternate 0.8s;
+}
+
+@keyframes loading {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.3);
+  }
+}
