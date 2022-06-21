@@ -1,5 +1,6 @@
 # IPTracker
 This IP Tracker App tracks your IP Address locations. This app is internally using API (https://ipapi.co/json) to get the data.  
+We basically using Axios to fetch data from API. It is a library which is used to make requests to an API, return data from the API, and then do things with that data in our application
 
 Link: https://bhumikasaini1999.github.io/IPTracker/  
 Click on Lookup IP Button to fetch the information for you.  
